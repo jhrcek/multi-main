@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Multiple elm modules with main</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="js/elm.js"></script>
+</head>
+
+<body>
+  <div id="a"></div>
+  <div id="b"></div>
+  <div id="c"></div>
+
+  <script>
+    Elm.A.init({
+      node: document.getElementById('a')
+    });
+    Elm.B.init({
+      node: document.getElementById('b')
+    });
+    Elm.C.init({
+      node: document.getElementById('c')
+    });
+  </script>
+
+</body>
+
+</html>
